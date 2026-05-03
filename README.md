@@ -93,6 +93,8 @@ qclaw shell                        # Interactive protected shell
 
 These are intentional scope boundaries, not bugs. If you need more, [open an issue](https://github.com/carefree-xiao/qclaw/issues).
 
+Using Cursor / Claude Code / OpenHands? [Open an issue and tell me your workflow.](https://github.com/carefree-xiao/qclaw/issues/new)
+
 ## License
 
 MIT
