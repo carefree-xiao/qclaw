@@ -8,6 +8,10 @@ Stop AI agents from deleting the wrong thing.
 
 ## Demo
 
+![Demo Screenshot](demo.png)
+
+[Watch Demo Video](demo.mp4)
+
 ```bash
 $ qclaw eval "rm -rf fake_prod_db"
 
