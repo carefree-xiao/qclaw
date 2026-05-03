@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qclaw"
+version = "0.1.0"
+description = "Execution Firewall for AI Coding Agents — prevent AI from running destructive commands"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["ai", "agent", "firewall", "safety", "cursor", "claude-code"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+qclaw = "qclaw_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qclaw_cli*", "qclaw_core*"]
+
+[tool.setuptools.package-data]
+qclaw_cli = ["*.py"]
